@@ -7,7 +7,7 @@ interface ICarDal{
     public function Add($car);
     public function Update($car);
     public function Delete($car);
-
+    
 }
 
 ?>

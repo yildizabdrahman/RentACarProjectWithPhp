@@ -10,11 +10,9 @@ class CarManager implements IcarService{
     {
         $this->_ICarDal = $ICarDal;
     }
-
     public function GetAll(){
 
         return  $this->_ICarDal->GetAll();
-
     }
     public function GetAllByBrand($brandId){
 

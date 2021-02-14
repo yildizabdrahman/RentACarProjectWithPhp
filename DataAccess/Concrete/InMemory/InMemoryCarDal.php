@@ -5,7 +5,6 @@ require_once "Entites/Concrete/Car.php";
 
 class InMemoryCarDal implements ICarDal
 {
-
     public $_cars = array();
 
     public function __construct()
@@ -27,13 +26,11 @@ class InMemoryCarDal implements ICarDal
         $car2->Description = "Günlük Kiralık 2";
 
         $_tempArray = array($car1, $car2);
-
+        
         $this->_cars =  $_tempArray;
     }
-
     public function GetAll()
     {
-
         return  $this->_cars;
     }
     public function GetAllByBrand($brandId)
@@ -45,19 +42,16 @@ class InMemoryCarDal implements ICarDal
             if ($_car->BrandId == $brandId) {
 
                 array_push($_tempArray, $_car);
-
             }
         }
         return $_tempArray;
     }
     public function Add($car)
     {
-
         array_push($this->_cars, $car);
     }
     public function Update($car)
     {
-
         foreach ($this->_cars as $key => $_car) {
 
             if ($_car->Id == $car->Id) {
@@ -72,7 +66,6 @@ class InMemoryCarDal implements ICarDal
 
     public function Delete($car)
     {
-
         foreach ($this->_cars as $key => $_car) {
 
             if ($_car->Id == $car->Id) {

@@ -24,7 +24,7 @@ $car3 = new Car();
 $car2->Id = 5;
 $car3->BrandId = 2;
 $car3->ColorId = 2;
-$car1->ModelYear = 2021;
+$car3->ModelYear = 2021;
 $car3->DailyPrice = 250;
 $car3->Description = "Günlük Kiralık 5";
 
@@ -50,13 +50,12 @@ $car2Updated->Description = "Günlük Kiralık 4 Updated";
 
 $carManager->Update($car2Updated);
 
-
 $carManager->delete($car1);
 
 //print_r($carManager->GetAll());
 
 foreach ($carManager->GetAll() as  $car) {
-    echo $car->Description . "<br/>";
+    echo $car->ModelYear." Model ".$car->Description . "<br/>";
 }
 
 echo "<br>";
@@ -64,5 +63,5 @@ echo "<br>";
 //print_r($carManager->GetAllByBrand(2));
 
 foreach ($carManager->GetAllByBrand(2) as  $car) {
-    echo $car->Description . "<br/>";
+    echo $car->ModelYear." Model ".$car->Description . "<br/>";
 }
