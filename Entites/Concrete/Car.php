@@ -6,4 +6,5 @@ class Car implements IEntity{
 
     public $Id, $BrandId, $ColorId, $ModelYear, $DailyPrice, $Description;
 }
+
 ?>
