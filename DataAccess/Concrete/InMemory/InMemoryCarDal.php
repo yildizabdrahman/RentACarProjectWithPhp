@@ -14,6 +14,7 @@ class InMemoryCarDal implements ICarDal
         $car1->Id = 1;
         $car1->BrandId = 1;
         $car1->ColorId = 1;
+        $car1->ModelYear = 2011;
         $car1->DailyPrice = 100;
         $car1->Description = "Günlük Kiralık 1";
 
@@ -21,6 +22,7 @@ class InMemoryCarDal implements ICarDal
         $car2->Id = 2;
         $car2->BrandId = 1;
         $car2->ColorId = 2;
+        $car2->ModelYear = 2015;
         $car2->DailyPrice = 150;
         $car2->Description = "Günlük Kiralık 2";
 

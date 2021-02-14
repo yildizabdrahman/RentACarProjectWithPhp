@@ -8,6 +8,7 @@ $car1 = new Car();
 $car1->Id = 3;
 $car1->BrandId = 2;
 $car1->ColorId = 3;
+$car1->ModelYear = 2018;
 $car1->DailyPrice = 170;
 $car1->Description = "Günlük Kiralık 3";
 
@@ -15,6 +16,7 @@ $car2 = new Car();
 $car2->Id = 4;
 $car2->BrandId = 2;
 $car2->ColorId = 4;
+$car2->ModelYear = 2020;
 $car2->DailyPrice = 250;
 $car2->Description = "Günlük Kiralık 4";
 
@@ -22,6 +24,7 @@ $car3 = new Car();
 $car2->Id = 5;
 $car3->BrandId = 2;
 $car3->ColorId = 2;
+$car1->ModelYear = 2021;
 $car3->DailyPrice = 250;
 $car3->Description = "Günlük Kiralık 5";
 
@@ -41,6 +44,7 @@ $car2Updated = new Car();
 $car2Updated->Id = 4;
 $car2Updated->BrandId = 2;
 $car2Updated->ColorId = 4;
+$car2Updated->ModelYear = 2020;
 $car2Updated->DailyPrice = 250;
 $car2Updated->Description = "Günlük Kiralık 4 Updated";
 
